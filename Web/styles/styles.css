@@ -1,14 +1,11 @@
 /*Selectores*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Gris claro */
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(to right, #ee85b4, #e160ef); /* Degradado de azul a rosado */
-            background-size: cover; /* Cubre toda la pantalla */
-            background-position: center; /* Centra el fondo */
-            background-repeat: no-repeat; /* No se repite */
-        }
         
 
 
@@ -112,4 +109,27 @@ tbody tr:nth-child(odd) {
 .huella {
     width: 50px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    font-weight: bold; /* Negrita */
+}
+
+tbody tr:nth-child(even) {
+    background-color: white; /* Fondo blanco para filas pares */
+    color: black; /* Texto negro */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgreen; /* Fondo verde claro para filas impares */
+    color: black; /* Texto negro */
 }
