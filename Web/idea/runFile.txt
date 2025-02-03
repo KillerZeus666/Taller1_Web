@@ -1,5 +1,5 @@
 Parra correr proyecto en cualquier MV, tener Mvn y Java 
- 1.  Si estás en gitpod arreglar el direnv primero
+ .  Si estás en gitpod arreglar el direnv primero
 	sudo apt update
 	sudo apt install direnv
 	Abrir arhivo de configuración con nano ~/.bashrc y poner al final eval "$(direnv hook bash)" GUARDAR
