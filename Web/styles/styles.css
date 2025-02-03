@@ -1,9 +1,16 @@
 /*Selectores*/
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4e8ff1, #ff7eb9); /* Degradado de azul a rosado */
+            background-size: cover; /* Cubre toda la pantalla */
+            background-position: center; /* Centra el fondo */
+            background-repeat: no-repeat; /* No se repite */
+        }
+        
+
 
 h1, h2, h3 {
     text-decoration: underline;
@@ -14,7 +21,7 @@ h1, h2, h3 {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #4e8ff1;
     padding: 10px 0;
 }
 
@@ -37,8 +44,9 @@ h1, h2, h3 {
     display: inline-block;
 }
 
+
 .menu ul li a:hover {
-    background-color: #555;
+    background-color:rgb(58, 110, 224);
     border-radius: 5px;
 }
 
@@ -55,7 +63,7 @@ h1, h2, h3 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #4e8ff1;
     color: white;
     text-align: center;
     padding: 10px;
@@ -84,4 +92,18 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: lightgreen;
     color: black;
+}
+/*Imagen de bienvenida*/
+
+.imagen-flotante {
+    float: right; /* Hace que la imagen flote a la derecha */
+    margin: 10px; /* Espacio alrededor de la imagen */
+    width: 200px; /* Ajusta el tamaño de la imagen */
+    border: 2px solid black; /* Borde opcional para destacar la imagen */
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+    text-align: justify;
 }
