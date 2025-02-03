@@ -1,0 +1,14 @@
+Parra correr proyecto en cualquier MV, tener Mvn y Java 
+ 1.  Si estás en gitpod arreglar el direnv primero
+	sudo apt update
+	sudo apt install direnv
+	Abrir arhivo de configuración con nano ~/.bashrc y poner al final eval "$(direnv hook bash)" GUARDAR
+	source ~/.bashrc	 
+2. Instalar la v17 de Java
+	sdk install java 17.0.3-zulu
+
+3. Compilar y correr
+	cd barberia
+	mvn clean install
+	mvn spring-boot:run
+    mvn clean install -DskipTests
