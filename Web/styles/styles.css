@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Gris claro */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
         
@@ -66,16 +69,25 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
 }
 
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    /* Borde negro para la tabla */
+    border: 2px solid black; 
+
 }
+.datos-bibliograficos {
+    flex: 1;
+    padding-bottom: 50px; /* Espacio adicional para que el footer no se solape */
+}
+
 
 thead {
     background-color: darkblue;
@@ -116,6 +128,11 @@ table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+}
+th, td {
+    border: 2px solid black; /* Bordes negros para celdas */
+    padding: 10px;
+    text-align: left;
 }
 
 thead {
