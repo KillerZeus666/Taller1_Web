@@ -1,49 +1,100 @@
-<!-- Taller 1. HTML y CSS-->
-<!-- Katheryn Sofía Guasca, Desarrollo Web. -->
-
-<!--Página 5, Idea-->
-<!--Estructurar pagina de bienvenida-->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi Página Personal</title>
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-        <!-- Barra de Navegacion estatica -->
-        <nav class="menu">
-            <span class="nombre">Katheryn Sofía Guasca</span>
-            <ul>
-                <img src="../images/huella.png" alt="Imagen de bienvenida" class="huella">
-                <li><a href="index.html">Bienvenida</a></li>
-                <li><a href="datosBibliograficos.html">Datos Biográficos</a></li>
-                <li><a href="cv.html">Hoja de Vida</a></li>
-                <li><a href="interes.html">Material de Interés</a></li>
-                <li><a href="idea.html">Idea</a></li>
-                <img src="../images/huella.png" alt="Imagen de bienvenida" class="huella">
 
-    
-            </ul>
-        </nav>
+    <!-- Barra de Navegación Estática -->
+    <nav class="menu">
+        <span class="nombre">Katheryn Sofía Guasca</span>
+        <ul>
+            <img src="../images/huella.png" alt="Imagen de bienvenida" class="huella">
+            <li><a href="index.html">Bienvenida</a></li>
+            <li><a href="datosBibliograficos.html">Datos Biográficos</a></li>
+            <li><a href="cv.html">Hoja de Vida</a></li>
+            <li><a href="interes.html">Material de Interés</a></li>
+            <li><a href="idea.html">Mascotas</a></li>
+            <img src="../images/huella.png" alt="Imagen de bienvenida" class="huella">
+        </ul>
+    </nav>
+
+    <!-- Sección de Tarjetas de Mascotas -->
+    <section class="mascotas-container">
+        <h2>Mascotas</h2>
+        <div class="mascotas-grid">
+            <!-- Tarjeta de Zeus -->
+            <div class="mascota-card">
+                <h3>Zeus</h3>
+                <div class="mini-carrusel">
+                    <button class="mini-prev" onclick="cambiarImagen(0, -1)">&#10094;</button>
+                    <img src="../images/zeus1.jpg" class="mini-img" alt="Max">
+                    <button class="mini-next" onclick="cambiarImagen(0, 1)">&#10095;</button>
+                </div>
+                <p><strong>Edad:</strong> 3 años</p>
+                <p><strong>Raza:</strong> Pincher</p>
+            </div>
+
+            <!-- Tarjeta de Luna -->
+            <div class="mascota-card">
+                <h3>Coki</h3>
+                <div class="mini-carrusel">
+                    <button class="mini-prev" onclick="cambiarImagen(1, -1)">&#10094;</button>
+                    <img src="../images/coki1.jpg" class="mini-img" alt="Luna">
+                    <button class="mini-next" onclick="cambiarImagen(1, 1)">&#10095;</button>
+                </div>
+                <p><strong>Edad:</strong> 2 años</p>
+                <p><strong>Raza:</strong>Pincher Vaquita</p>
+            </div>
+
+            <!-- Tarjeta de Toby -->
+            <div class="mascota-card">
+                <h3>Toby</h3>
+                <div class="mini-carrusel">
+                    <button class="mini-prev" onclick="cambiarImagen(2, -1)">&#10094;</button>
+                    <img src="../images/toby1.jpg" class="mini-img" alt="Rocky">
+                    <button class="mini-next" onclick="cambiarImagen(2, 1)">&#10095;</button>
+                </div>
+                <p><strong>Edad:</strong> 13 años</p>
+                <p><strong>Raza:</strong> Siamés</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://github.com/KillerZeus666" target="_blank">
+            <img src="../images/github.png" alt="GitHub" class="imagenFooter">
+        </a>
+        <a href="https://www.instagram.com/_kathee_26?igsh=ejU1MnJ2b3lvbXVl" target="_blank">
+            <img src="../images/instagram.png" alt="Instagram" class="imagenFooter">
+        </a>
+        <a href="mailto:katheryng2017@gmail.com">
+            <img src="../images/gmail.png" alt="Gmail" class="imagenFooter">
+        </a>
+        <p>© 2025 - Página personal, Katheryn Guasca.</p>
+    </footer>
+
+    <script>
+        let imagenes = [
+            ["../images/zeus1.jpg", "../images/zeus2.jpg", "../images/zeus3.jpg"], 
+            ["../images/coki1.jpg", "../images/coki2.jpg", "../images/coki3.jpg"], 
+            ["../images/toby1.jpg", "../images/toby2.jpg", "../images/toby3.jpg"]
+        ];
+        let currentImagen = [0, 0, 0];
+
+        function cambiarImagen(mascotaIndex, n) {
+            currentImagen[mascotaIndex] = (currentImagen[mascotaIndex] + n + imagenes[mascotaIndex].length) % imagenes[mascotaIndex].length;
+            let imgElement = document.querySelectorAll(".mascota-card .mini-img")[mascotaIndex];
+            imgElement.src = imagenes[mascotaIndex][currentImagen[mascotaIndex]];
+        }
+    </script>
+
 </body>
-<footer>
-    <a href="https://github.com/KillerZeus666" target="_blank">
-        <img src="../images/github.png" alt="GitHub" class="imagenFooter">
-    </a>
-    <a href="https://www.instagram.com/_kathee_26?igsh=ejU1MnJ2b3lvbXVl" target="_blank">
-        <img src="../images/instagram.png" alt="Instagram" class="imagenFooter">
-    </a>
-    <a href="mailto:katheryng2017@gmail.com">
-        <img src="../images/gmail.png" alt="Gmail" class="imagenFooter">
-    </a>
-    <p>© 2025 - Página personal, Katheryn Guasca.</p>
-</footer>
 </html>

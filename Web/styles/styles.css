@@ -421,4 +421,53 @@ summary {
     height: 315px;
     display: block;
     margin: 10px auto;
+}.mascotas-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.mascotas-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.mascota-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+}
+
+.mini-carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.mini-prev, .mini-next {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.mini-prev {
+    margin-right: 8px;
+}
+
+.mini-next {
+    margin-left: 8px;
 }
