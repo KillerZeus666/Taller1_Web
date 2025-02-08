@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
- 
 
 
 h1, h2, h3 {
@@ -162,4 +161,53 @@ tbody tr:nth-child(odd) {
     text-align: center;
     display: block;
     margin-bottom: 10px; /* Espacio con el menú */
+}
+
+/* Subsecciones con bordes y fondo en gradiente */
+.subseccion {
+    background: linear-gradient(to right, #f5f8f9, #db95d4);
+    padding: 15px;
+    border: 2px solid black;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Listas no numeradas (viñetas de otro color) */
+.lista-iconos {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-iconos li {
+    position: relative;
+    padding-left: 25px;
+    color: #333;
+}
+
+.lista-iconos li::before {
+    content: "●";
+    position: absolute;
+    left: 0;
+    color: #47c5b2;
+}
+
+/* Listas numeradas (números de otro color) */
+.lista-numerada {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista-numerada li {
+    counter-increment: list;
+    padding-left: 25px;
+    position: relative;
+    color: #333;
+}
+
+.lista-numerada li::before {
+    content: counter(list) ".";
+    position: absolute;
+    left: 0;
+    color: #0056b3;
+    font-weight: bold;
 }
