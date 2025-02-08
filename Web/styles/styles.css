@@ -8,8 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
-        
+ 
 
 
 h1, h2, h3 {
@@ -122,6 +121,11 @@ tbody tr:nth-child(odd) {
     width: 50px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
 }
+.imagenFooter {
+    width: 30px; /* Tamaño más pequeño */
+    height: auto; /* Mantiene la proporción */
+    margin: 0 10px; /* Espaciado horizontal entre las imágenes */
+}
 
 /* Estilos para la tabla */
 table {
@@ -149,4 +153,13 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
     background-color: lightgreen; /* Fondo verde claro para filas impares */
     color: black; /* Texto negro */
+}
+.nombre {
+    font-family: 'Croissant One', cursive;
+    font-size: 30px;  /* Tamaño grande */
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px; /* Espacio con el menú */
 }
