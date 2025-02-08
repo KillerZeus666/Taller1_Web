@@ -298,3 +298,15 @@ section {
     border-radius: 8px; /* Esquinas redondeadas */
     box-shadow: 2px 2px 5px rgba(177, 84, 84, 0.1); /* Sombra ligera */
 }
+.imagenHabilidades {
+    width: 60px; 
+    height: auto;
+    margin: 10px;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
