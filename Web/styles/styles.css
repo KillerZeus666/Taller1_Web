@@ -182,6 +182,15 @@ tbody tr:nth-child(odd) {
     margin: 10px 0;
     border-radius: 5px;
 }
+.subseccion1 {
+    background: linear-gradient(to right, #f0f7f6, #69a3fa);
+    padding: 15px;
+    border: 2px solid black;
+    margin: 20px auto; /* Centrar horizontalmente */
+    border-radius: 5px;
+    max-width: 600px; /* Ajusta el ancho según tu preferencia */
+    text-align: center; /* Centrar el texto dentro */
+}
 
 /* Listas no numeradas (viñetas de otro color) */
 .lista-iconos {
@@ -314,4 +323,102 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+}
+/* Contenedor principal de subsecciones */
+.contenedor-subsecciones {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las subsecciones bajen de línea si no caben */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 15px; /* Espaciado entre bloques */
+    padding: 20px;
+}
+
+
+
+/* Efecto hover */
+.subseccion2:hover {
+    transform: scale(1.05);
+}
+
+.enlaces-certificaciones {
+    display: flex;
+    gap: 15px;  /* Espacio entre los enlaces */
+}
+
+/* Filtros */
+.filtros {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filtros button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #69a3fa;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filtros button:hover {
+    background-color: #2a6bc3;
+}
+
+/* Ocultar secciones por defecto */
+.categoria {
+    display: block;
+}
+details {
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(to right, #f0f7f6,#f2f4e7 );
+    cursor: pointer;
+}
+details ul {
+    text-align: left;
+    list-style-position: inside; 
+    padding-left: 20px;
+}
+
+details ul li::marker {
+    color: #1b26f1; 
+    font-size: 1.2em; 
+}
+
+summary {
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+/* Imágenes de películas */
+.cartel {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    border-radius: 5px;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Máximo dos columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+.subseccion2 {
+    background: linear-gradient(to right, #f0f7f6, #69a3fa);
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+}
+.subseccion2 iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    display: block;
+    margin: 10px auto;
 }
