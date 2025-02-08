@@ -167,7 +167,7 @@ tbody tr:nth-child(odd) {
     font-family: 'Croissant One', cursive;
     font-size: 30px;  /* Tamaño grande */
     font-weight: bold;
-    color: white;
+    color: rgb(15, 6, 6);
     text-align: center;
     display: block;
     margin-bottom: 10px; /* Espacio con el menú */
