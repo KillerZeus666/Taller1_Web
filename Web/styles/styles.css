@@ -50,6 +50,16 @@ h1, h2, h3 {
     border-radius: 5px;
 }
 
+#indice {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+
 .bienvenida {
     margin: 80px auto;
     width: 80%;
@@ -165,7 +175,7 @@ tbody tr:nth-child(odd) {
 
 /* Subsecciones con bordes y fondo en gradiente */
 .subseccion {
-    background: linear-gradient(to right, #f5f8f9, #db95d4);
+    background: linear-gradient(to right, #f0f7f6,#69a3fa );
     padding: 15px;
     border: 2px solid black;
     margin: 10px 0;
@@ -210,4 +220,55 @@ tbody tr:nth-child(odd) {
     left: 0;
     color: #0056b3;
     font-weight: bold;
+}
+#indice {
+    background: linear-gradient(to right, #f0f7f6,#69a3fa ); /* Gradiente verde-azul */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+.negrilla {
+    font-weight: bold;
+}
+
+
+#indice h2 {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#indice ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Alinea los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+    gap: 20px; /* Espaciado entre ítems */
+    flex-wrap: wrap; /* Para que en pantallas pequeñas se apilen */
+}
+
+#indice li {
+    margin: 5px 0;
+}
+
+#indice a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#indice a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
