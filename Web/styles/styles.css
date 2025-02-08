@@ -303,6 +303,11 @@ section {
     height: auto;
     margin: 10px;
 }
+.foto {
+    width: 90px; 
+    height: auto;
+    border-radius: 50%; 
+}
 
 .imagenes-container {
     display: flex;
