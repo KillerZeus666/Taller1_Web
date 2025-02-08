@@ -130,6 +130,7 @@ tbody tr:nth-child(odd) {
     width: 50px; /* Ajusta el tamaño de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
 }
+
 .imagenFooter {
     width: 30px; /* Tamaño más pequeño */
     height: auto; /* Mantiene la proporción */
@@ -271,4 +272,29 @@ tbody tr:nth-child(odd) {
 #indice a:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
+}
+section {
+    margin: 40px auto; /* Aumenta el espacio arriba y abajo */
+    padding: 20px; /* Espacio interno */
+    width: 80%; 
+}
+.proyecto {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaciado entre texto e imagen */
+    border: 2px solid #160a0a; /* Borde sutil */
+    padding: 10px;
+    border-radius: 10px; /* Esquinas redondeadas */
+    background-color:linear-gradient(to right#69a3fa ,#f0f7f6); /* Fondo suave */
+}
+
+.info-proyecto {
+    flex: 1; /* El texto ocupa el espacio disponible */
+}
+
+.vox {
+    width: 70px; /* Tamaño de la imagen */
+    height: auto;
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px rgba(177, 84, 84, 0.1); /* Sombra ligera */
 }
