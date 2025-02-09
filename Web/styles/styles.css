@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /* Gris claro */
+    background-color: #f4f4f4; 
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -93,7 +93,7 @@ table {
 }
 .datos-bibliograficos {
     flex: 1;
-    padding-bottom: 50px; /* Espacio adicional para que el footer no se solape */
+    padding-bottom: 50px;
 }
 
 
@@ -112,13 +112,13 @@ tbody tr:nth-child(odd) {
     background-color: lightgreen;
     color: black;
 }
-/*Imagen de bienvenida*/
 
+/*Imagen de bienvenida*/
 .imagen-flotante {
-    float: right; /* Hace que la imagen flote a la derecha */
-    margin: 10px; /* Espacio alrededor de la imagen */
-    width: 200px; /* Ajusta el tamaño de la imagen */
-    border: 2px solid black; /* Borde opcional para destacar la imagen */
+    float: right;
+    margin: 10px; 
+    width: 200px; 
+    border: 2px solid black; 
 }
 
 .contenido {
@@ -127,14 +127,14 @@ tbody tr:nth-child(odd) {
     text-align: justify;
 }
 .huella {
-    width: 50px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
+    width: 50px; 
+    height: auto; 
 }
 
 .imagenFooter {
-    width: 30px; /* Tamaño más pequeño */
-    height: auto; /* Mantiene la proporción */
-    margin: 0 10px; /* Espaciado horizontal entre las imágenes */
+    width: 30px; 
+    height: auto; 
+    margin: 0 10px; 
 }
 
 /* Estilos para la tabla */
@@ -144,34 +144,36 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    border: 2px solid black; /* Bordes negros para celdas */
+    border: 2px solid black;
     padding: 10px;
     text-align: left;
 }
 
 thead {
-    background-color: #003366; /* Azul oscuro */
+    background-color: #003366; 
     color: white;
-    font-weight: bold; /* Negrita */
+    font-weight: bold; 
 }
 
 tbody tr:nth-child(even) {
-    background-color: white; /* Fondo blanco para filas pares */
-    color: black; /* Texto negro */
+    /* Fondo blanco para filas pares */
+    background-color: white; 
+    color: black; 
 }
 
 tbody tr:nth-child(odd) {
-    background-color: lightgreen; /* Fondo verde claro para filas impares */
-    color: black; /* Texto negro */
+     /* Fondo verde claro para filas impares */
+    background-color: lightgreen;
+    color: black;
 }
 .nombre {
     font-family: 'Croissant One', cursive;
-    font-size: 30px;  /* Tamaño grande */
+    font-size: 30px;  
     font-weight: bold;
     color: rgb(15, 6, 6);
     text-align: center;
     display: block;
-    margin-bottom: 10px; /* Espacio con el menú */
+    margin-bottom: 10px;
 }
 
 /* Subsecciones con bordes y fondo en gradiente */
@@ -186,10 +188,10 @@ tbody tr:nth-child(odd) {
     background: linear-gradient(to right, #f0f7f6, #69a3fa);
     padding: 15px;
     border: 2px solid black;
-    margin: 20px auto; /* Centrar horizontalmente */
+    margin: 20px auto;
     border-radius: 5px;
-    max-width: 600px; /* Ajusta el ancho según tu preferencia */
-    text-align: center; /* Centrar el texto dentro */
+    max-width: 600px;
+    text-align: center;
 }
 
 /* Listas no numeradas (viñetas de otro color) */
@@ -232,13 +234,13 @@ tbody tr:nth-child(odd) {
     font-weight: bold;
 }
 #indice {
-    background: linear-gradient(to right, #f0f7f6,#69a3fa ); /* Gradiente verde-azul */
+    background: linear-gradient(to right, #f0f7f6,#69a3fa ); 
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto;
     width: 80%;
     text-align: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 .negrilla {
     font-weight: bold;
@@ -257,10 +259,10 @@ tbody tr:nth-child(odd) {
 #indice ul {
     list-style: none;
     padding: 0;
-    display: flex; /* Alinea los elementos en fila */
-    justify-content: center; /* Centra los elementos */
-    gap: 20px; /* Espaciado entre ítems */
-    flex-wrap: wrap; /* Para que en pantallas pequeñas se apilen */
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 #indice li {
@@ -283,29 +285,29 @@ tbody tr:nth-child(odd) {
     transform: scale(1.05);
 }
 section {
-    margin: 40px auto; /* Aumenta el espacio arriba y abajo */
-    padding: 20px; /* Espacio interno */
+    margin: 40px auto; 
+    padding: 20px; 
     width: 80%; 
 }
 .proyecto {
     display: flex;
     align-items: center;
-    gap: 15px; /* Espaciado entre texto e imagen */
-    border: 2px solid #160a0a; /* Borde sutil */
+    gap: 15px; 
+    border: 2px solid #160a0a; 
     padding: 10px;
-    border-radius: 10px; /* Esquinas redondeadas */
-    background-color:linear-gradient(to right#69a3fa ,#f0f7f6); /* Fondo suave */
+    border-radius: 10px; 
+    background-color:linear-gradient(to right#69a3fa ,#f0f7f6);
 }
 
 .info-proyecto {
-    flex: 1; /* El texto ocupa el espacio disponible */
+    flex: 1; 
 }
 
 .vox {
-    width: 70px; /* Tamaño de la imagen */
+    width: 70px; 
     height: auto;
-    border-radius: 8px; /* Esquinas redondeadas */
-    box-shadow: 2px 2px 5px rgba(177, 84, 84, 0.1); /* Sombra ligera */
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px rgba(177, 84, 84, 0.1); 
 }
 .imagenHabilidades {
     width: 60px; 
@@ -327,13 +329,11 @@ section {
 /* Contenedor principal de subsecciones */
 .contenedor-subsecciones {
     display: flex;
-    flex-wrap: wrap; /* Permite que las subsecciones bajen de línea si no caben */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 15px; /* Espaciado entre bloques */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
     padding: 20px;
 }
-
-
 
 /* Efecto hover */
 .subseccion2:hover {
@@ -342,9 +342,8 @@ section {
 
 .enlaces-certificaciones {
     display: flex;
-    gap: 15px;  /* Espacio entre los enlaces */
+    gap: 15px; 
 }
-
 /* Filtros */
 .filtros {
     text-align: center;
@@ -403,7 +402,7 @@ summary {
 }
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Máximo dos columnas */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
 }
